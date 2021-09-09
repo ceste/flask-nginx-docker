@@ -20,7 +20,7 @@ def hello():
 def call():
 
 	ABC = parser.parse_args()
-	data_decoded = request.data.decode("utf-8")
+	data_decoded = request.data.decode("utf-8") 
 
 	#convert to json
 	data_json = json.loads(data_decoded)
@@ -45,10 +45,10 @@ def call():
 
 	return jsonify(output)
 
-
 if __name__ == '__main__':
 	port = int(os.environ.get("PORT", 5001))
 	app.run(host='0.0.0.0', port = port, debug=True)
 
 	# local
 	# app.run(host='127.0.0.1', port = port, debug=True)
+	

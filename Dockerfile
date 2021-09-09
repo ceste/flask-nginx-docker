@@ -1,5 +1,7 @@
 FROM tiangolo/uwsgi-nginx-flask:python3.8
 
+ENV UWSGI_INI /app/uwsgi.ini
+
 # copy over our requirements.txt file
 COPY requirements.txt /tmp/
 
@@ -13,4 +15,3 @@ COPY . /app
 ENV LISTEN_PORT 5001
 
 EXPOSE 5001
-
