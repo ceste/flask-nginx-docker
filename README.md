@@ -26,3 +26,6 @@ curl localhost:5001
 curl -X POST -H 'Accept: application/json' -H 'Accept-Encoding: gzip, deflate' -H 'Connection: keep-alive' -H 'Content-Length: 19' -H 'Content-type: application/json' -H 'User-Agent: python-requests/2.26.0' -d '{"name" :"Chandra"}' http://127.0.0.1:5001/call
 ```
 
+Source:
+
+https://github.com/tiangolo/meinheld-gunicorn-flask-docker
