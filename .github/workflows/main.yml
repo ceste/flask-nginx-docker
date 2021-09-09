@@ -1,9 +1,10 @@
-name: Dockerize FLask App with Nginx
+name: Dockerize Flask with Nginx
+
 on:
   push:
-    branches: [ main ]
+    branches: [ main, master ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, master ]
 
 jobs:
   build:
